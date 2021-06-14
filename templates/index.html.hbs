@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+        {{hello}} world
+
+        {{#if all}}
+            <p>variable 1</p>
+        {{else}}
+            <p>variable 0</p>
+        {{/if}}
+
+        <div class="alert alert-primary shadow-sm" role="alert">
+           <h1>I like this framework</h1>
+        </div>
+
+
+        <ul class="list-unstyled">
+            {{#each people}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <a type="button" class="btn btn-primary" href="/gq">Playgraund</a>
+
+
+  </div>
+  <script src="bootstrap-5.0.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
